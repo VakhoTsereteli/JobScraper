@@ -1,0 +1,48 @@
+.job-list {
+  width: 100%;
+}
+.job-list section {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  border: 5px solid #670089;
+  border-radius: 20px;
+}
+.job-list section h2 {
+  color: #670089;
+  margin-left: 45px;
+  border: 5px solid #670089;
+  border-top: none;
+  border-radius: 10px;
+  width: auto;
+  max-width: 50%;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+.job-list section h2:hover {
+  text-decoration: underline;
+}
+.job-list ul li {
+  display: flex;
+}
+.job-list a {
+  width: 90%;
+  height: 100px;
+  background: #670089;
+  margin: 10px auto;
+  border-radius: 10px;
+  color: white;
+}
+.job-list a .title {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+}
+.job-list a .title:hover {
+  text-decoration: underline;
+}
+.job-list a .location {
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+}/*# sourceMappingURL=job-list.css.map */
