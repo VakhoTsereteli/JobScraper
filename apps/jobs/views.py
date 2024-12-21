@@ -2,13 +2,11 @@
 from django.shortcuts import render, get_object_or_404
 from ..scraper.models import Job
 from itertools import groupby
-from ..scraper.get_jobs import bog
 
 
 
 def home(request):
     jobs = Job.objects.order_by('source_website')
-
     grouped_jobs = {}
     for key, group in groupby(jobs, lambda x: x.source_website):
         grouped_jobs[key] = list(group)

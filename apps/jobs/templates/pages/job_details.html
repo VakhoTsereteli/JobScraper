@@ -1,7 +1,36 @@
 {% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    {{job.company_name}}|{{job.title}}
+{% endblock title %}
+    
 
 {% block content %}
+<link rel="stylesheet" href="{% static 'css/pages/job_details.css' %}">
+<title>
+    {{job.title}}
+</title>
+
 <div class="job-details">
-    {{job.description|safe}}
+    <div class="head">
+        <div>
+            <h2>
+                {{job.title}}
+            </h2>
+            <h4>
+                 &nbsp;&nbsp;{{job.location}}
+            </h4>
+        </div>
+        <a href="{{job.source_url}}" target="_blank">
+            <button id="view-source">
+                წყაროზე გადასვლა 
+            </button>
+        </a>
+    </div>
+    <div class="description">
+        {{job.description|safe}}
+    </div>
 </div>
 {% endblock content %}

@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "sass_processor",
     "apps.jobs",
     "apps.scraper",
 ]
@@ -127,7 +126,6 @@ STATICFILES_DIRS = [
     BASE_DIR / "apps" / "jobs" / "static",
 ]
 
-SASS_PROCESSOR_ROOT = BASE_DIR / 'apps' / 'jobs' / 'static'
 
 
 

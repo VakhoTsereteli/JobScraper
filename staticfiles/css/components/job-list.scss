@@ -8,7 +8,7 @@ $main-purple: #670089;
     section{
         width: 70%;
         height: auto;
-        margin: 20px auto;
+        margin: 0 auto;
         border: 5px solid $main-purple;
         border-radius: 20px;
 
@@ -22,7 +22,6 @@ $main-purple: #670089;
             max-width: 50%;
             padding-left: 5px;
             padding-bottom: 5px;
-            text-transform: uppercase;
         }
 
         h2:hover{

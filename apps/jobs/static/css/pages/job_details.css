@@ -1,0 +1,33 @@
+.job-details .head {
+  display: flex;
+  padding-left: 30px;
+  justify-content: space-between; /* Space between elements */
+  align-items: center;
+  width: 95%;
+}
+.job-details .head div {
+  color: #670089;
+}
+.job-details .head div h4 {
+  margin: 10px 0;
+}
+.job-details .head #view-source {
+  width: 200px;
+  height: 40px;
+  border: none;
+  background: #670089;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.job-details .description {
+  padding: 10px 10px;
+  margin: 20px auto;
+  width: 95%;
+  text-wrap: inherit;
+  background: #670089;
+  border-radius: 20px;
+  color: white;
+}/*# sourceMappingURL=job_details.css.map */
