@@ -133,7 +133,7 @@ CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
 CELERY_BEAT_SCHEDULE = {
     'get_jobs': {
         'task': 'apps.scraper.tasks.get_jobs',
-        'schedule': 30.0,  # 6 hours in seconds
+        'schedule': 21600.0, 
     },
 }
 
