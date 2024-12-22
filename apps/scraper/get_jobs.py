@@ -30,13 +30,10 @@ def bog():
                 source_website = "jsc-bank-of-georgia.hirehive.com"
             )
             new_job.save()
+    print("BOG Jobs Scraped")
             
-
-        
-
-
-
-
+            
+            
 def jobs_ge():
     jobs_ge_url = "https://jobs.ge"
     req = requests.get(f"{jobs_ge_url}/?page=1&q=web&cid=6&lid=1")
@@ -79,3 +76,4 @@ def jobs_ge():
                     new_job.save()
 
 
+    print("Jobs.ge Jobs Scraped")

@@ -22,6 +22,9 @@
   font-weight: bold;
   cursor: pointer;
 }
+.job-details .head #view-source:hover {
+  text-decoration: underline;
+}
 .job-details .description {
   padding: 10px 10px;
   margin: 20px auto;
@@ -30,4 +33,8 @@
   background: #670089;
   border-radius: 20px;
   color: white;
+}
+.job-details a {
+  color: white;
+  text-decoration: underline;
 }/*# sourceMappingURL=job_details.css.map */

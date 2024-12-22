@@ -25,6 +25,10 @@
             cursor: pointer;
         }
 
+        #view-source:hover{
+            text-decoration: underline;
+        }
+
     }
     .description{
         padding: 10px 10px;
@@ -34,5 +38,10 @@
         background: #670089;
         border-radius: 20px;
         color: white;
+    }
+
+    a{
+        color: white;
+        text-decoration: underline;
     }
 }

@@ -8,6 +8,6 @@ class Job(models.Model):
     location = models.CharField(max_length=255, null=False)
     source_url = models.URLField()
     source_website = models.CharField(max_length=255, null=False)
-
+    
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)  

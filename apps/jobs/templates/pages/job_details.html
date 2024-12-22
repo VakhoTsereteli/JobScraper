@@ -9,9 +9,6 @@
 
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/pages/job_details.css' %}">
-<title>
-    {{job.title}}
-</title>
 
 <div class="job-details">
     <div class="head">
@@ -19,6 +16,9 @@
             <h2>
                 {{job.title}}
             </h2>
+            <h3>
+                "{{job.company_name}}"
+            </h3>
             <h4>
                  &nbsp;&nbsp;{{job.location}}
             </h4>
