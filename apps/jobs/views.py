@@ -18,3 +18,6 @@ def job_details(request,source_website, job_id):
     job = get_object_or_404(Job,source_website=source_website, id=job_id)
 
     return render(request, "pages/job_details.html", {"job": job})
+
+def page_404(request, exception):
+    return render(request, 'pages/404.html', status=404)

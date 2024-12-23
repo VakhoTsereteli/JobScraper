@@ -7,9 +7,10 @@
         .job-alert{
             color: #670089;
             margin: 0 auto;
-            width: auto;
+            width: 95%;
             height: auto;
             padding: 20px;
+            border: 1px solid #670089;
             margin-top: 0 auto;
             text-wrap: wrap;
         }
@@ -20,7 +21,6 @@
     
         .body{
             font-weight: bold;
-            font-size: 16px;
         }
     
         #view-job{
@@ -31,9 +31,6 @@
             border-radius: 5px;
             margin-top: 10px;
             cursor: pointer;
-            width: 250px;
-            height: 40px;
-            font-size: 16px;
         }
     </style>
 </head>
@@ -52,12 +49,14 @@
                     <strong>COMPANY:</strong> {{job.company_name}}
                 </p>
                 <p>
+                    <strong>DESCRIPTION:</strong>
+                    <br>
                     {{job.description|safe}}
                 </p>
             </div>
             <a href="{{job.source_url}}" target="_blank">
                 <button style="" id="view-job">
-                    ვაკანსიის ნახვა
+                    View Job
                 </button>
             </a>
     </div>

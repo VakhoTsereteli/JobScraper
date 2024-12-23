@@ -117,7 +117,7 @@ class JobProcessor:
                 print("No new jobs to send")
             
         @staticmethod    
-        def send_email(job):
+        def send_email(job: Job):
             html_body = render_to_string("emails/job_alert.html", {"job": job})
             email = EmailMessage(
                 subject="NEW JOB ALERT",
@@ -128,7 +128,8 @@ class JobProcessor:
             email.content_subtype = "html"
             try:
                 email.send()
-                Job.objects.update(sent=True)
+                job.sent = True
+                job.save()
                 print("Email sent")
             except Exception as e:
                 print(f"Error sending email: {e}")

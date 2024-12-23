@@ -32,7 +32,8 @@ SECRET_KEY = "django-insecure-ac#yl0os+5@h%dk5hz623ga03^xmh*uxjii3l22i)dotami++2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+]
 
 TIME_ZONE = "UTC"
 USE_TZ = True
@@ -140,13 +141,13 @@ STATICFILES_DIRS = [
 CELERY_BROKER_URL = 'redis://localhost:6379/0'
 CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
 CELERY_BEAT_SCHEDULE = {
-    # 'get_jobs': {
-    #     'task': 'apps.scraper.tasks.get_jobs',
-    #     'schedule': crontab(hour=6), 
-    # },
+    'get_jobs': {
+        'task': 'apps.scraper.tasks.get_jobs',
+        'schedule': crontab(hour=12, minute=0), 
+    },
     'send_email': {
         'task': 'apps.scraper.tasks.send_emails',
-        'schedule': 30.0,
+        'schedule': crontab(hour=12, minute=0),
     }
 }
 

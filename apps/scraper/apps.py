@@ -9,6 +9,6 @@ class ScraperConfig(AppConfig):
         if os.environ.get('RUN_MAIN', None) != 'true':
             return
         from .job_processor import JobProcessor
-        # JobProcessor.GetJobs.bog()
-        # JobProcessor.GetJobs.jobs_ge()
+        JobProcessor.GetJobs.bog()
+        JobProcessor.GetJobs.jobs_ge()
         JobProcessor.Mail.send()
