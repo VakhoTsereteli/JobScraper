@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Alert</title>
+    <style>
+        @font-face {
+            font-family: "Symbols";
+            src: url(../../fonts/Symbols.ttf)
+        }
+
+        .job-alert{
+            width: 100%;
+            height: auto;  
+            color: #670089;
+        }
+
+        .job-alert h2{
+            text-align: center;
+        }
+
+        .job-alert .body{
+            padding: 10px;
+            margin: 10px;
+            height: 50vh;
+        }
+
+        .job-alert #view-job{
+            width: 100px;
+            height: 20px;
+            border: none;
+            background: #670089;
+            border-radius: 5px;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="job-alert">
+        <h2>
+            {{job.title}}
+        </h2>
+
+        <div class="body">
+            <p>
+                <b>კომპანია: &nbsp;&nbsp;</b> {{job.company_name}}          
+            </p>
+            <p>
+                <b>ლოკაცია: &nbsp;&nbsp;</b> {{job.location}}
+            </p>
+        </div>
+        <a href="{{job.source_url}}">
+            <button id="view-job">
+                ვაკანსიის ნახვა 
+            </button>
+        </a>
+    </div>
+</body>
+</html>

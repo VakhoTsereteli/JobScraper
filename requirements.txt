@@ -3,3 +3,5 @@ bs4
 requests
 celery
 redis
+pytz
+python-dotenv

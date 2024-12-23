@@ -1,7 +1,11 @@
 from celery import shared_task
-from .get_jobs import bog, jobs_ge
+from .job_processor import JobProcessor
 
 @shared_task
 def get_jobs():
-    bog()   
-    jobs_ge()
+    JobProcessor.GetJobs.bog()
+    JobProcessor.GetJobs.jobs_ge()
+    
+@shared_task
+def send_emails():
+    JobProcessor.Mail.send()
