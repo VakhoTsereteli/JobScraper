@@ -11,4 +11,4 @@ class ScraperConfig(AppConfig):
         from .job_processor import JobProcessor
         JobProcessor.GetJobs.bog()
         JobProcessor.GetJobs.jobs_ge()
-        JobProcessor.Mail.send()
+        # JobProcessor.Mail.send()
